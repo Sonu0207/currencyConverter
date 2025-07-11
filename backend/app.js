@@ -21,10 +21,12 @@ app.use(apiLimiter);
 
 //! Conversion Routes
 app.post('/api/convert', async (req, res) => {
-    const {from, to, amount} = req.body;
-    console.log({ from, to, amount });
+
     try {
-        
+        const { from, to, amount } = req.body;
+        console.log({ from, to, amount })
+        const URL = `${API_URL}/${API_KEY}/pair/${from}/${to}/${amount}`;
+        console.log(URL)        
     } catch (error) {
         
     }
