@@ -42,20 +42,24 @@ cd currency-converter
 ```
 
 ### 2. **Backend Setup**
+
 ```bash
 cd backend
 npm install
 ```
 
     #### Create a .env file in the backend folder and add your API key:
+
 ```bash
 API_KEY=YOUR_API_KEY
 ```
 
     #### Start the backend server:
+
 ```bash
 node app.js
 ```
+
 ### 3. **Frontend Setup**
 
 ```bash
