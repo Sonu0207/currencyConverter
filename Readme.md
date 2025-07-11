@@ -34,20 +34,20 @@ A full-stack currency converter web application that provides real-time exchange
 
 ## 📦 Installation & Setup
 
-### 1. Clone the Repository
+### 1. **Clone the Repository**
 
 ```bash
 git clone https://github.com/Sonu0207/currencyConverter
 cd currency-converter
 ```
 
-### 2. Backend Setup
+### 2. **Backend Setup**
 
 ```bash
 cd backend
 npm install
 ```
-##### Create a .env file in the backend folder:
+##### Create a .env file in the backend folder and add your API key:
 
 ```bash
 API_KEY=YOUR_API_KEY
@@ -57,7 +57,7 @@ API_KEY=YOUR_API_KEY
 ```bash
 node app.js
 ```
-### 3. Frontend Setup
+### 3. **Frontend Setup**
 
 ```bash
 cd frontend
