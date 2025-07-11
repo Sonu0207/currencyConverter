@@ -1,0 +1,145 @@
+/* Reset & base */
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;  /* centers horizontally */
+  align-items: center;      /* centers vertically */
+  background: #f9fafb;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  /* Remove any margin if present */
+  margin: 0;
+}
+
+
+.app-container {
+  max-width: 480px;
+  margin: 2rem auto;
+  padding: 1rem 1.5rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Hero Section */
+
+.hero {
+  text-align: center;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 2.25rem;
+  color: #2c3e50;
+}
+
+.subtitle {
+  margin-top: 0.25rem;
+  font-size: 1rem;
+  color: #718096;
+}
+
+/* Converter Form */
+
+.converter-section {
+  margin-top: 2rem;
+}
+
+.converter-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.input-group label {
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+  color: #4a5568;
+}
+
+.input {
+  padding: 0.55rem 0.8rem;
+  font-size: 1rem;
+  border: 1.5px solid #cbd5e0;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #3182ce;
+  box-shadow: 0 0 4px #3182ceaa;
+}
+
+/* Button */
+
+.submit-btn {
+  background-color: #3182ce;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #2b6cb0;
+}
+
+/* Result & Error */
+
+.result-box {
+  margin-top: 1.5rem;
+  padding: 1rem 1.25rem;
+  background-color: #e6fffa;
+  border: 1px solid #b2f5ea;
+  border-radius: 8px;
+  color: #2c7a7b;
+  font-weight: 600;
+}
+
+.error-msg {
+  margin-top: 1rem;
+  color: #c53030;
+  font-weight: 600;
+}
+
+/* Additional Info Section */
+
+.info-section {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e2e8f0;
+  text-align: center;
+  color: #4a5568;
+}
+
+.info-section h2 {
+  margin-bottom: 0.6rem;
+  color: #2d3748;
+}
+
+/* Responsive */
+
+@media (max-width: 520px) {
+  .app-container {
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
