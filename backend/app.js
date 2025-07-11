@@ -16,7 +16,7 @@ const apiLimiter = rateLimit({
 });
 
 //! CORS
-const corsOptions = {origin: 'https://cheerful-cajeta-ace908.netlify.app/'};
+const corsOptions = {origin: 'http://localhost:5173'};
 app.use(cors(corsOptions));
 
 //! Middlewares

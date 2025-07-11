@@ -32,7 +32,7 @@ function App() {
     }
 
     try {
-      const res = await axios.post("https://currencyconverter-70mg.onrender.com/api/convert", {
+      const res = await axios.post("http://localhost:5000/api/convert", {
         from: from.toUpperCase(),
         to: to.toUpperCase(),
         amount: parseFloat(amount),
