@@ -1,6 +1,6 @@
-# 💱 Currency Converter Web App
+# 💱 Currency Exchange Rate Web App
 
-A full-stack currency converter web application that provides real-time exchange rates between 160+ global currencies using the [ExchangeRate-API](https://www.exchangerate-api.com/). Built with **React** on the frontend and **Node.js (Express)** on the backend.
+A full-stack currency exchange rate web application that provides real-time exchange rates between 160+ global currencies using the [ExchangeRate-API](https://www.exchangerate-api.com/). Built with **React** on the frontend and **Node.js (Express)** & **Express.js** on the backend.
 
 ---
 
@@ -47,16 +47,16 @@ cd currency-converter
 cd backend
 npm install
 ```
-##### Create a .env file in the backend folder and add your API key:
+    ##### Create a .env file in the backend folder and add your API key:
 
-```bash
-API_KEY=YOUR_API_KEY
-```
-##### Start the backend server:
+    ```bash
+    API_KEY=YOUR_API_KEY
+    ```
+    ##### Start the backend server:
 
-```bash
-node app.js
-```
+    ```bash
+    node app.js
+    ```
 ### 3. **Frontend Setup**
 
 ```bash
