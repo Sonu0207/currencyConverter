@@ -48,13 +48,13 @@ cd backend
 npm install
 ```
 
-    #### Create a .env file in the backend folder and add your API key:
+##### Create a .env file in the backend folder and add your API key:
 
 ```ini
 API_KEY=YOUR_API_KEY
 ```
 
-    #### Start the backend server:
+##### Start the backend server:
 
 ```bash
 node app.js
