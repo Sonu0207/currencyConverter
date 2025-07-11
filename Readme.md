@@ -50,7 +50,7 @@ npm install
 
     #### Create a .env file in the backend folder and add your API key:
 
-```bash
+```ini
 API_KEY=YOUR_API_KEY
 ```
 
