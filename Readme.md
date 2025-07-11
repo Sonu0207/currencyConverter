@@ -37,5 +37,30 @@ A full-stack currency converter web application that provides real-time exchange
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/currency-converter.git
+git clone https://github.com/Sonu0207/currencyConverter
 cd currency-converter
+```
+
+### 2. Backend Setup
+
+```bash
+cd backend
+npm install
+```
+#### Create a .env file in the backend folder:
+
+```bash
+API_KEY=YOUR_API_KEY
+```
+#### Start the backend server:
+
+```bash
+node app.js
+```
+### 3. Frontend Setup
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
