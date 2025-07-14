@@ -16,8 +16,24 @@ const apiLimiter = rateLimit({
 });
 
 //! CORS
-const corsOptions = {origin: 'http://localhost:5173'};
+const allowedOrigins = [
+  'http://localhost:5173',
+  'https://currencyconverter-1-hmbx.onrender.com'
+];
+
+const corsOptions = {
+  origin: function (origin, callback) {
+    // Allow requests with no origin (like mobile apps, curl, etc.)
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS: ' + origin));
+    }
+  }
+};
+
 app.use(cors(corsOptions));
+
 
 //! Middlewares
 app.use(express.json());
