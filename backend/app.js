@@ -9,9 +9,9 @@ const app = express();
 
 const API_URL = 'https://v6.exchangerate-api.com/v6';
 const { API_KEY } = process.env;
-//! Rate Limiter 15 minutes - 100 requests
+//! Rate Limiter 5 minutes - 100 requests
 const apiLimiter = rateLimit({
-    windowMs: 15*60*1000, // 15 minutes
+    windowMs: 5*60*1000, // 5 minutes
     max: 100, // limit each IP to 100 requests per windowMs
 });
 
